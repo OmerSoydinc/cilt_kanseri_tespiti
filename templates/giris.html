@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cilt Kanseri Tespiti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        h2 {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            font-size: 18px;
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        input[type="file"] {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+    
+        .content {
+            flex: 1;
+        }
+    
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            font-size: 12px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cilt Kanseri Tespiti</h1>
+        <h2>Cilt kanseri hakkında daha fazla bilgi edinin ve hemen tespit başlatın!</h2>
+        <p>Cilt kanseri erken teşhisle tedavi edilebilir. Görüntü yükleyin ve modelimizin cilt kanseri tespiti yapmasını sağlayın.</p>
+        
+        <!-- Görüntü yükleme formu -->
+        <form action="/tespit" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <br>
+            <button type="submit" class="btn">Tahmin Yap</button>
+        </form>
+
+        <!-- Sayfa linkleri -->
+        <div class="links">
+            <a href="/hakkimizda">Hakkımızda</a>
+            <a href="/kanser_nedir">Cilt Kanseri Nedir?</a>
+        </div>
+    </div>
+<!-- Footer Kısmı -->
+
+
+<footer style="background-color: #333; color: #4CAF50; padding: 20px 0; font-size: 12px; width: 100%; margin-top: 300px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; padding: 0 20px;">
+        <!-- Sol Kısım: Logo ve Adres -->
+        <div style="flex: 1; text-align: center;">
+            <div>
+                <img src="/static/logo.png" alt="Okul Logosu" style="width: 200px; margin-bottom: 10px;">
+                <img src="/static/logo.jpg" alt="Okul Logosu" style="width: 150px; margin-bottom: 10px;">
+            </div>
+            
+            <p style="color: #fff; text-align: center;">Adres: <span style="color: #4f9fdd;">Isparta Uygulamalı Bilimler Üniversitesi Batı Yerleşkesi, <br>
+                Teknoloji Fakültesi Dekanlığı E-14 Bloğu (2-Kat) 32260 ISPARTA</span></p>
+        </div>
+
+        <!-- Sağ Kısım: İletişim ve Telefon -->
+        <div style="flex: 1; text-align: center;">
+            <p> </p>
+    
+            <p style="color: #fff; font-weight: bold;">İletişim</p>
+            <p style="color: #fff;">Mail: <a href="omersoydinc20@gmail.com" style="color: #4f9fdd;">omersoydinc20@gmail.com</a></p>
+            <p style="color: #fff;">Telefon: <span style="color: #4f9fdd;">05052901963</span></p>
+        </div>
+    </div>
+
+    <!-- Alt Kısım: Telif Hakkı -->
+    <p style="text-align: center; color: #fff; margin-top: 20px;">© 2024 Ömer Soydınç - Tüm Hakları Saklıdır</p>
+</footer>
+
+
+    
+    
+
+
+</body>
+</html>
